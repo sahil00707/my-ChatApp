@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.avatar:checked + img{
+    background-color: rgb(224, 223, 223);
+    
+}
