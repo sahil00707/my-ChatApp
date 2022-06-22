@@ -99,7 +99,7 @@ body .center .fisrt_last_name div {
 
 body .center .fisrt_last_name div h3 {
   margin: 5px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 body .center .fisrt_last_name div h3 .required_field_esterik {
@@ -110,7 +110,7 @@ body .center .fisrt_last_name div input {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #dddcdc;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 body .center .email_address,
@@ -122,7 +122,7 @@ body .center .Mobile_number {
 body .center .email_address h3,
 body .center .password h3,
 body .center .Mobile_number h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 5px 0;
 }
 
@@ -139,7 +139,7 @@ body .center .Mobile_number input {
   padding: 10px 10px;
   border-radius: 5px;
   border: 1px solid #dddcdc;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 body .center .submit_btn {
