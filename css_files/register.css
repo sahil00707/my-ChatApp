@@ -243,9 +243,10 @@ body .center p a {
   body {
     height: 100vh;
     width: 100vw;
+    background-color: white;
   }
   body .center {
-    padding-top: 50px;
+    padding-top: 5git 0px;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -254,6 +255,8 @@ body .center p a {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 /*# sourceMappingURL=register.css.map */
