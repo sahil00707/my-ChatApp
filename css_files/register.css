@@ -258,5 +258,15 @@ body .center p a {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  body .center .first_page .fisrt_last_name {
+    display: block;
+    width: 100%;
+  }
+  body .center .first_page .fisrt_last_name div {
+    width: 100%;
+  }
+  body .center .first_page .fisrt_last_name div input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=register.css.map */
