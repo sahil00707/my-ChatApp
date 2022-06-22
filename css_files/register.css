@@ -238,4 +238,17 @@ body .center p a {
   color: red;
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 0;
+  }
+}
 /*# sourceMappingURL=register.css.map */
