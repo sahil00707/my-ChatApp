@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #cbcbe7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .center {
+  width: 450px;
+  min-height: 500px;
+  background-color: white;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 10px #8a8ac2;
+          box-shadow: 0 0 10px #8a8ac2;
+  border: none;
+  border-radius: 15px;
+}
+
+body .center .settings-heading h2 {
+  padding: 5px 0;
+  border-bottom: 1px solid grey;
+}
+
+body .center .all-settings button {
+  text-align: left;
+  background-color: transparent;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 5px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=settings.css.map */

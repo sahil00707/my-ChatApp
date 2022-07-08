@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Maven Pro", sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(203, 203, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center {
+        width: 450px;
+        min-height: 500px;
+        background-color: white;
+        padding: 25px;
+        box-shadow: 0 0 10px rgb(138, 138, 194);
+        border: none;
+        border-radius: 15px;
+        .settings-heading {
+            h2 {
+                padding: 5px 0;
+                border-bottom: 1px solid grey;
+            }
+        }
+        .all-settings{
+            button{
+                text-align: left;
+                background-color: transparent;
+                width: 100%;
+                height: fit-content;
+                padding: 10px 5px;
+                color: black;
+                border: none;
+                border-bottom: 1px solid grey;
+                margin: 10px 0;
+            }
+        }
+    }
+}

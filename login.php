@@ -8,7 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css_files/register.css">
+    <link rel="icon" href="icons/chat.png">
+
+    <link rel="stylesheet" href="css_files/register.css" id="register_id">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
 
     <?php      require_once("common_links.php");  ?>
@@ -34,11 +37,41 @@
                 <h3>Password   <span class="required_field_esterik">*</span></h3>
                 <input type="password" placeholder="Password" name="password" class="password_login" required autocomplete="off" >
             </div>
+            </form>
+            <div class="submit_btn">
           <input type="submit" value="Chat Now" class="btn_login" name="login">
-          <p>Don't Have an Account' ? <a href="register.php">Register Now</a></p>
-        </form>
+          <a href="register.php"><button>Register Now</button></a>
+</div>
+   
 </div>
 <script src="register_login.js"></script>
 
+<script>
+    $(document).ready(
+        function(){
+            function darkLightMode() {
+                var register_id = document.getElementById("register_id");
+            $.ajax({
+                url: "darkLightMode.php",
+                type: "POST",
+                success: function (data) {
+                    // alert(data);
+                    if (data == "Dark") {     
+                        register_id.href = "css_files/register-dark-mode.css";      
+                   //     back_btn.src="icons/arrow-left-white.svg";
+                    }
+                    else {        
+                        chat_area_css.href = "css_files/register.css";
+                    //    back_btn.src="icons/arrow-left-black.svg";
+
+                    }
+                }
+            });
+
+        }
+        darkLightMode();
+        }
+    );
+</script>
 </body>
 </html>

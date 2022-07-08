@@ -1,24 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
 }
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
     display: none;
 }
-button,input{
+button,
+input {
     cursor: pointer;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(203, 203, 231);
     display: flex;
     justify-content: center;
     align-items: center;
-    .center{
+    .center {
         width: 450px;
         min-height: 500px;
         background-color: white;
@@ -26,169 +27,235 @@ body{
         box-shadow: 0 0 10px rgb(138, 138, 194);
         border: none;
         border-radius: 15px;
-        .current_user{
+        position: relative;
+        overflow: hidden;
+        .settings-drawer {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: -50%;
+            background-color: rgb(74, 74, 74);
+            z-index: 1500;
+            padding: 10px;
+            transition: 0.3s ease;
+            .hide_settings {
+                width: 25px;
+                height: 25px;
+                float: right;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            button,
+            a {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin: 8px 0;
+                background-color: transparent;
+                text-align: left;
+                color: white;
+                padding: 0px 0px;
+                border: none;
+                text-decoration: none;
+                img {
+                    width: 17px;
+                }
+                p {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .current_user {
             display: flex;
             align-items: center;
             border-bottom: 0.5px solid rgb(221, 220, 220);
-   padding-bottom: 15px;
-            .user_img{
-                width: 50px;
-                height: 50px;
+            padding-bottom: 15px;
+            .user_img {
+                width: 55px;
+                height: 55px;
                 border-radius: 50%;
-                img{
+                position: relative;
+         //       border: 1.5px solid rgb(204, 204, 204);
+                img {
                     width: 100%;
                     height: 100%;
                     border-radius: 50%;
                     object-fit: cover;
                 }
+                .edit {
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    right: 0;
+                    bottom: 0;
+                    background-color: blue;
+                    padding: 5px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    outline: 2px solid white;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
             }
-            .active_logout{
+            .active_logout {
                 width: 90%;
-            
+
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 0 0 0 15px;
-                .name_active{
-                    h3{
+                .name_active {
+                    h3 {
                         font-size: 17px;
                     }
-                   .active_current_user{
-                    display: flex;
-                    align-items: center;
-                  .green_dot{
-                    height: 6px;
-                    width: 6px;
-                    border-radius: 50%;
-                    background-color: rgb(5, 198, 5);
-                  }  
-                  p{
-               //     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    font-weight: bolder;
-                    color: rgb(5, 198, 5);
-                    margin-left: 5px;
-                  font-size: 14px;
-                  }
-                   } 
+                    .active_current_user {
+                        display: flex;
+                        align-items: center;
+                        .green_dot {
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            background-color: rgb(5, 198, 5);
+                        }
+                        p {
+                            //     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: bolder;
+                            color: rgb(5, 198, 5);
+                            margin-left: 5px;
+                            font-size: 14px;
+                        }
+                    }
                 }
-              
-                .logout{
-                    button{
-                        padding: 7px 20px;
-                        background-color: black;
-                        color: white;
-                        border-radius: 5px;
+
+                .settings_on_btn {
+                    width: 25px;
+                    height: 50px;
+                    background-color: transparent;
+                    border: none;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
                     }
                 }
             }
         }
-        .select_user_to_chat{
+        .select_user_to_chat {
             margin: 15px 0;
             display: flex;
-            input{
+            input {
                 width: 100%;
                 padding: 12px 12px;
                 border: 0.5px solid rgb(221, 220, 220);
                 border-top-left-radius: 8px;
                 border-bottom-left-radius: 8px;
-
             }
-            input:focus{
+            input:focus {
                 outline: none;
             }
-            .img{
-                width: 50px ;
+            .img {
+                width: 50px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: black;
                 border-top-right-radius: 8px;
                 border-bottom-right-radius: 8px;
-             
-                img{
+
+                img {
                     width: 16px;
                 }
             }
         }
-        .all_users{
+        .all_users {
             height: 350px;
             overflow-y: scroll;
             overflow-x: hidden;
             position: relative;
-            .user{
+            .user {
                 display: flex;
                 align-items: center;
                 margin-bottom: 25px;
-                .user_avatar{
+                .user_avatar {
                     height: 50px;
                     width: 50px;
                     border-radius: 50%;
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         border-radius: 50%;
                     }
                 }
-                .name_chat{
+                .name_chat {
                     padding: 0 0 0 15px;
                     width: 90%;
                     display: flex;
                     justify-content: space-between;
-                    .name_active{
-                        .active{
+                    .name_active {
+                        .active {
                             margin-top: 3px;
                             display: flex;
                             align-items: center;
-                            .dot{
+                            .dot {
                                 height: 7px;
                                 width: 7px;
                                 border-radius: 50%;
-                                background-color:green;
-                                margin-right:6px;
+                                background-color: green;
+                                margin-right: 6px;
                             }
-                            .last_text{
+                            .last_text {
                                 color: grey;
-                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
                                 font-weight: 400;
                                 font-size: larger;
                                 width: 140px;
                                 overflow: hidden;
-                                white-space: nowrap; 
+                                white-space: nowrap;
                                 text-overflow: ellipsis;
                             }
                         }
-                        .not_active{
+                        .not_active {
                             margin-top: 3px;
                             display: flex;
                             align-items: center;
-                            .dot{
+                            .dot {
                                 height: 7px;
                                 width: 7px;
                                 border-radius: 50%;
-                                background-color:red;
-                                margin-right:6px;
+                                background-color: red;
+                                margin-right: 6px;
                             }
                         }
                     }
-                    .chat_btn{
-                        input{
+                    .chat_btn {
+                        input {
                             padding: 7px 20px;
                             background-color: black;
                             color: white;
                             border-radius: 5px;
-                        }  
+                        }
                     }
                 }
             }
-            .no_user_found{
+            .no_user_found {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 color: grey;
                 font-size: x-large;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             }
         }
     }

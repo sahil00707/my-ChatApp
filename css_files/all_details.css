@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #cbcbe7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .center {
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 10px #8a8ac2;
+          box-shadow: 0 0 10px #8a8ac2;
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body .center .profile_pic {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  background-color: #bebaba;
+  border-radius: 50%;
+}
+
+body .center .profile_pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+
+body .center .details {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  min-height: 320px;
+  max-height: 400px;
+}
+
+body .center .details p {
+  color: grey;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+body .center .details p span {
+  color: black;
+  font-weight: bolder;
+}
+
+body .center .details button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+body .center .details button a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=all_details.css.map */

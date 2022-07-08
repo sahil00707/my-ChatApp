@@ -6,6 +6,10 @@
   font-family: "Maven Pro", sans-serif;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -99,7 +103,7 @@ body .center .fisrt_last_name div {
 
 body .center .fisrt_last_name div h3 {
   margin: 5px 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body .center .fisrt_last_name div h3 .required_field_esterik {
@@ -110,7 +114,7 @@ body .center .fisrt_last_name div input {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #dddcdc;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body .center .email_address,
@@ -122,7 +126,7 @@ body .center .Mobile_number {
 body .center .email_address h3,
 body .center .password h3,
 body .center .Mobile_number h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 5px 0;
 }
 
@@ -139,7 +143,7 @@ body .center .Mobile_number input {
   padding: 10px 10px;
   border-radius: 5px;
   border: 1px solid #dddcdc;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body .center .submit_btn {
@@ -180,7 +184,7 @@ body .center .select_image a button {
 }
 
 body .center .image_grid {
-  height: 300px;
+  height: 290px;
   overflow-y: scroll;
   overflow-x: hidden;
   margin: 20px 0;
@@ -220,7 +224,11 @@ body .center .image_grid .avatar img {
           transform: translate(-50%, -50%);
 }
 
-body .center input[type="submit"] {
+body .center .submit_btn {
+  z-index: 10000;
+}
+
+body .center .submit_btn input[type="submit"] {
   background-color: black;
   color: white;
   width: 100%;
@@ -229,14 +237,16 @@ body .center input[type="submit"] {
   font-size: 17px;
 }
 
-body .center p {
-  font-family: "Raleway", sans-serif;
-  margin: 15px 0;
-}
-
-body .center p a {
-  color: red;
+body .center .submit_btn a button {
+  width: 100%;
+  margin: 10px 0;
+  background-color: transparent;
+  padding: 10px 0;
+  border: 2px solid black;
+  color: black;
   text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

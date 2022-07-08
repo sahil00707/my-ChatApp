@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Maven Pro", sans-serif;
 }
+a,button{
+    cursor: pointer;
+}
 
 *::-webkit-scrollbar {
     display: none;
@@ -69,14 +72,14 @@ body {
         }
         .fisrt_last_name {
             display: flex;
-            
+
             width: 100%;
             div {
                 width: 50%;
                 h3 {
                     margin: 5px 0;
-                    font-family: 'Nunito', sans-serif;
-                    .required_field_esterik{
+                    font-family: "Nunito", sans-serif;
+                    .required_field_esterik {
                         color: red;
                     }
                 }
@@ -84,7 +87,7 @@ body {
                     padding: 10px;
                     border-radius: 5px;
                     border: 1px solid rgb(221, 220, 220);
-                    font-family: 'Nunito', sans-serif;
+                    font-family: "Nunito", sans-serif;
                 }
             }
         }
@@ -93,9 +96,9 @@ body {
         .Mobile_number {
             margin: 15px 0;
             h3 {
-                font-family: 'Nunito', sans-serif;
+                font-family: "Nunito", sans-serif;
                 margin: 5px 0;
-                .required_field_esterik{
+                .required_field_esterik {
                     color: red;
                 }
             }
@@ -104,7 +107,7 @@ body {
                 padding: 10px 10px;
                 border-radius: 5px;
                 border: 1px solid rgb(221, 220, 220);
-                font-family: 'Nunito', sans-serif;
+                font-family: "Nunito", sans-serif;
             }
         }
         .submit_btn {
@@ -121,8 +124,8 @@ body {
         }
         .select_image {
             margin: 15px 0;
-            h3{
-                .required_field_esterik{
+            h3 {
+                .required_field_esterik {
                     color: red;
                 }
             }
@@ -140,7 +143,7 @@ body {
             }
         }
         .image_grid {
-            height: 300px;
+            height: 290px;
             overflow-y: scroll;
             overflow-x: hidden;
             margin: 20px 0;
@@ -153,14 +156,13 @@ body {
                 height: 120px;
                 position: relative;
                 border: 0.5px solid rgb(224, 223, 223);
-            
+
                 input {
                     height: 100%;
                     width: 100%;
                     position: absolute;
                     z-index: 10;
                     opacity: 0;
-    
                 }
                 img {
                     padding: 30px 20px;
@@ -173,54 +175,60 @@ body {
                 }
             }
         }
-        input[type="submit"] {
-            background-color: black;
-            color: white;
-            width: 100%;
-            padding: 10px 0;
-            border-radius: 5px;
-            font-size: 17px;
-        }
-        p {
-            font-family: "Raleway", sans-serif;
-
-            margin: 15px 0;
+        .submit_btn {
+            z-index: 10000;
+            //background-color: palegoldenrod;
+            input[type="submit"] {
+                background-color: black;
+                color: white;
+                width: 100%;
+                padding: 10px 0;
+                border-radius: 5px;
+                font-size: 17px;
+            }
             a {
-                color: red;
-                text-decoration: none;
+                button {
+                    width: 100%;
+                    margin: 10px 0;
+                    background-color: transparent;
+                    padding: 10px 0;
+                    border: 2px solid black;
+                    color: black;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
             }
         }
     }
 }
 
-
-
-@media screen and (max-width:600px) {
-    body{
+@media screen and (max-width: 600px) {
+    body {
         height: 100vh;
         width: 100vw;
         background-color: white;
-        .center{
+        .center {
             padding-top: 50px;
             width: 100vw;
             height: 100vh;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             border-radius: 0;
             box-shadow: none;
-            .first_page{
-            
-            .fisrt_last_name{
-                display: block;
-                width: 100%;
-                div{
+            .first_page {
+                .fisrt_last_name {
+                    display: block;
                     width: 100%;
-                    input{
+                    div {
                         width: 100%;
+                        input {
+                            width: 100%;
+                        }
                     }
-                }}
+                }
             }
         }
     }

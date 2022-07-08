@@ -52,7 +52,25 @@ else if($msg['sender_number']==$you && $msg['receiver_number']==$me)
 } 
 
             ?>
-            <p class="last_text"><?php  echo $chat_name."".$chat_text_small?></p>
+    <?php   
+        $tt=$chat_text_small;
+        $decryption="No message yet";
+if($tt!="No message yet"){
+        $decryption_iv = '1234567891011121';
+  
+// Store the decryption key
+$decryption_key = "Rinku";
+$options = 0;
+$ciphering = "AES-128-CTR";
+// Use openssl_decrypt() function to decrypt the data
+$decryption=openssl_decrypt ($tt, $ciphering, 
+        $decryption_key, $options, $decryption_iv);
+
+}
+
+        ?>
+
+            <p class="last_text"><?php  echo $chat_name."".$decryption?></p>
                     </h5>
                 </div>
             </div>

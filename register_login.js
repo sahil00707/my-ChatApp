@@ -26,7 +26,7 @@ $(document).ready(
             var number = $("#register_field_number").val();
             var avatar=$('input[name="avatar"]:checked').val();
             var register_field_password = $("#register_field_password").val();
-           // var formx=$("form");
+       
        
             if (number != "" && register_field_fname != "" && register_field_lname != "" && register_field_email != "" && register_field_password != "") {
                 $.ajax({
