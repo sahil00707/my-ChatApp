@@ -342,4 +342,11 @@ body .center .chat-send .send_msg .input_btn form .sendBtn {
   border-bottom-right-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=chat_area.css.map */

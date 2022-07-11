@@ -360,4 +360,11 @@ body .center .all_users .no_user_found {
   font-size: x-large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=all_users-dark-mode.css.map */

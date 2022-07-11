@@ -87,4 +87,11 @@ body .center .details button a {
   text-decoration: none;
   color: white;
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=all_details.css.map */

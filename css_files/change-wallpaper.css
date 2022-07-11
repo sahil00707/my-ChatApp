@@ -122,4 +122,11 @@ body .center .select_btn input {
   color: white;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=change-wallpaper.css.map */

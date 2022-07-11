@@ -287,4 +287,11 @@ body .center .submit_btn a button {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=register-dark-mode.css.map */

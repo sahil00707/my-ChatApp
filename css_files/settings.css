@@ -50,4 +50,11 @@ body .center .all-settings button {
   border-bottom: 1px solid grey;
   margin: 10px 0;
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=settings.css.map */

@@ -32,7 +32,7 @@ while ($backimg = mysqli_fetch_assoc($getBackImage)) {
     <link rel="icon" href="icons/chat.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
 
-    <?php require_once "common_links.php";?>
+    <?php require_once "common_links.php"?>
 
 </head>
 <body>

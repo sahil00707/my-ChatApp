@@ -110,4 +110,11 @@ body .center a button {
   color: black;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 450px) {
+  body .center {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=updateProfilePic.css.map */
